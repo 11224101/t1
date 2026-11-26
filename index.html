@@ -1,11 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>軟綿綿兔子星球 | Bunny Planet</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>我的第一個網站</h1>
+    <!-- 導覽列 -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">🐰 兔子星球</div>
+            <ul class="nav-links">
+                <li><a href="#about">關於兔兔</a></li>
+                <li><a href="#breeds">常見品種</a></li>
+                <li><a href="#care">飼養小知識</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 主視覺區塊 -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>歡迎來到軟綿綿的兔子星球</h1>
+            <p>探索長耳朵、三瓣嘴與小短尾的可愛日常，一起成為懂兔兔的好主人！</p>
+            <button id="carrot-btn" class="btn">🥕 餵食胡蘿蔔 (<span id="carrot-count">0</span>)</button>
+            <p id="bunny-reaction" class="reaction-text">點擊按鈕餵兔兔吃點心吧！</p>
+        </div>
+    </section>
+
+    <!-- 關於兔子 -->
+    <section id="about" class="container">
+        <h2>為什麼大家都愛兔兔？</h2>
+        <p class="section-desc">兔子是安靜、愛乾淨且充滿好奇心的伴侶動物。牠們開心時會原地跳躍扭動（稱為 Bunny Binky），放鬆時則會像麻糬一樣整隻攤平在地上！</p>
+    </section>
+
+    <!-- 常見品種卡片 -->
+    <section id="breeds" class="container bg-soft">
+        <h2>人氣兔子品種圖鑑</h2>
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-icon">🐇</div>
+                <h3>荷蘭侏儒兔</h3>
+                <p>體型嬌小圓潤，耳朵短小直立，個性活潑好動，是最受歡迎的寵物兔之一。</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🐶</div>
+                <h3>荷蘭垂耳兔</h3>
+                <p>擁有垂在臉頰兩側的長耳朵，表情呆萌無辜，性格通常較為溫馴親人。</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🦁</div>
+                <h3>獅子兔</h3>
+                <p>脖子周圍長有一圈蓬鬆長毛，就像迷你小獅子一樣，需要定期幫忙梳毛整理。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 飼養小知識 -->
+    <section id="care" class="container">
+        <h2>新手養兔必備 3 原則</h2>
+        <ul class="care-list">
+            <li><strong>🌾 主食是牧草不是紅蘿蔔：</strong>兔子需要 24 小時無限量供應提摩西牧草來磨牙與維持腸胃蠕動，紅蘿蔔只能當作偶爾的零食。</li>
+            <li><strong>💧 乾淨的飲用水：</strong>每天更換新鮮白開水，建議使用水碗比滾珠水瓶更能讓兔兔順利喝水。</li>
+            <li><strong>🏠 安全的活動空間：</strong>兔子腳底沒有肉墊，地面應鋪設防滑軟墊，並收好電線避免啃咬。</li>
+        </ul>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer>
+        <p>© 2026 軟綿綿兔子星球 | 使用 VS Code + Git + GitHub Pages 架設</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
