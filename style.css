@@ -187,3 +187,11 @@ footer {
     .hero h1 { font-size: 1.8rem; }
     .nav-links { display: none; }
 }
+
+.card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; /* 自動裁切填滿框框，照片比例不會被壓扁拉長 */
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
