@@ -19,3 +19,40 @@ carrotBtn.addEventListener("click", () => {
     const randomMsg = messages[Math.floor(Math.random() * messages.length)];
     reactionText.textContent = randomMsg;
 });
+
+// --- 兔兔名字產生器 ---
+const generateNameBtn = document.getElementById("generate-name-btn");
+const bunnyNameDisplay = document.getElementById("bunny-name-display");
+
+const bunnyNames = [
+    "麻糬 (Mochi)",
+    "奶油泡芙",
+    "焦糖布丁",
+    "雪球 (Snowball)",
+    "黑糖珍珠",
+    "肉桂捲",
+    "白玉湯圓",
+    "可可亞",
+    "豆花",
+    "年糕",
+    "棉花糖",
+    "栗子蒙布朗",
+    "奶蓋",
+    "小饅頭",
+    "波霸",
+    "oreo（奧利奧）",
+    "草莓大福",
+    "地瓜球"
+];
+
+let lastIndex = -1; // 用來記錄上一次抽到的號碼，避免連續抽到重複名字
+
+generateNameBtn.addEventListener("click", () => {
+    let randomIndex;
+    do {
+        randomIndex = Math.floor(Math.random() * bunnyNames.length);
+    } while (randomIndex === lastIndex);
+    
+    lastIndex = randomIndex;
+    bunnyNameDisplay.textContent = "🐰 " + bunnyNames[randomIndex];
+});
